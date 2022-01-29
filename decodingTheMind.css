@@ -2,36 +2,55 @@ body {
   background-color: lightblue;
 }
 
+*{
+margin:0px;
+padding: 0px;
+box-sizing: border-box;
+}
+nav{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #333;
+}
+.logo{
+
+  color: rgb(200,200,200);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+.nav-links{
+  display:flex;
+  
+  justify-content: space-around;
+  width: 35%;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+  color: aliceblue;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+font-size:14px;
+}
+
+
+
 
 #navbar {
   overflow: hidden;
   background-color: #333;
 }
 
-/* Navbar links */
-#navbar a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
 
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
 }
+
 
