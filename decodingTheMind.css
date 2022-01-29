@@ -2,34 +2,36 @@ body {
   background-color: lightblue;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+#navbar {
   overflow: hidden;
+  background-color: #333;
 }
 
-li {
+/* Navbar links */
+#navbar a {
   float: right;
-}
-
-li a {
   display: block;
-  padding: 8px;
-  background-color: lightblue;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
-ul{
-  list-style-type: none;
-  margin:0;
-  padding: 0;
-  overflow: hidden;
-}
-li{
-  float:right;
-}
-li a{
 
-  display:block;
-  padding: 8px;
-  background-color: lightblue;
+/* Page content */
+.content {
+  padding: 16px;
 }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
