@@ -16,14 +16,24 @@ nav{
 }
 .logo{
 
-  color: rgb(200,200,200);
+  color: rgb(250,250,250);
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
+  text-align: left;
+  list-style: none;
+  text-decoration: none;
+  
+}
+.logo a {
+  text-decoration: none;
+  text-align: left;
+  color:rgb(250,250, 250);
 }
 .nav-links{
+  color: rgb(250,250,250);
   display:flex;
-  
+  text-decoration: none;
   justify-content: space-around;
   width: 35%;
 }
@@ -36,6 +46,7 @@ nav{
   letter-spacing: 3px;
   font-weight: bold;
 font-size:14px;
+
 }
 
 
@@ -43,7 +54,7 @@ font-size:14px;
 
 #navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #999;
 }
 
 
