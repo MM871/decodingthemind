@@ -1,67 +1,59 @@
+html {
+  font-size: clamp(12px, 1.75vw, 18px);
+}
+
 body {
-  background-color: lightblue;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #ffffff;
 }
 
-*{
-margin:0px;
-padding: 0px;
-box-sizing: border-box;
+body.pancakeStack {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
-nav{
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  background-color: #333;
-}
-.logo{
 
-  color: rgb(250,250,250);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 20px;
-  text-align: left;
-  list-style: none;
-  text-decoration: none;
+div{
+
+  background-color:#00008B;
+}
+header {
+  justify-content: space-between;
   
+  padding: 1em;
+  background-color: #00008B;
 }
-.logo a {
+
+header,
+header nav {
+  display: flex;
+  align-items: center;
+
+  color: whitesmoke;
+}
+
+header a {
   text-decoration: none;
-  text-align: left;
-  color:rgb(250,250, 250);
-}
-.nav-links{
-  color: rgb(250,250,250);
-  display:flex;
-  text-decoration: none;
-  justify-content: space-around;
-  width: 35%;
-}
-.nav-links li{
-  list-style: none;
-}
-.nav-links a{
-  color: aliceblue;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-font-size:14px;
-
+  color: inherit;
+  
+  transition: all 0.2s ease;
 }
 
-
-
-
-#navbar {
-  overflow: hidden;
-  background-color: #999;
+header a.logo {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
-
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
+header nav {
+  gap: 0.5em;
+  font-size: 1.3rem;
 }
 
+header nav a {
+  padding: 0.5em;
+}
+
+header nav a:hover {
+  color: #97CEDF;
+}
 
