@@ -8,20 +8,16 @@ body {
 }
 
 body.pancakeStack {
-  min-height: 100vh;
+  min-height: 1000vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
-div{
-
-  background-color:#00008B;
-}
 header {
   justify-content: space-between;
-  
+
   padding: 1em;
-  background-color: #00008B;
+
 }
 
 header,
@@ -29,22 +25,24 @@ header nav {
   display: flex;
   align-items: center;
 
-  color: whitesmoke;
+  color: (180,180,180);
 }
 
 header a {
   text-decoration: none;
   color: inherit;
-  
+  background: none;
   transition: all 0.2s ease;
 }
 
 header a.logo {
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  background: none;
 }
 
 header nav {
+
   gap: 0.5em;
   font-size: 1.3rem;
 }
