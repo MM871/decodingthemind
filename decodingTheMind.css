@@ -8,17 +8,17 @@ body {
 }
 
 body.pancakeStack {
-  min-height: 1000vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
 header {
   justify-content: space-between;
-
   padding: 1em;
 
 }
+
+
 
 header,
 header nav {
